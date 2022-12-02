@@ -6,8 +6,10 @@ const Main = (props) => {
     return (
         <div>
             <Header />
-            <h1>Main Component</h1>
-            <BurgerBuilder />
+            <div className="container">
+                <BurgerBuilder />
+            </div>
+
         </div>
     );
 }
