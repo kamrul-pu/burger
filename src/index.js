@@ -14,9 +14,7 @@ root.render(
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(
-//   <React.Fragment>
-//     <App />
-//   </React.Fragment>,
+//   <App />,
 //   document.getElementById("root")
 // )
 

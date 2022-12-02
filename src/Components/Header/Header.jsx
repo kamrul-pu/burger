@@ -1,7 +1,8 @@
 import React from "react";
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Navbar, NavbarBrand, Nav, NavItem } from 'reactstrap';
 import './Header.css';
 import Logo from '../../assets/logo.png';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -12,7 +13,13 @@ const Header = () => {
                 </NavbarBrand>
                 <Nav className="mr-md-5">
                     <NavItem>
-                        <NavLink className="NavLink" href="#">Something</NavLink>
+                        <NavLink className="NavLink" exact to="/">Burger Builder</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className="NavLink" exact to="/orders">Orders</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className="NavLink" exact to="/checkout">Checkout</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar>
